@@ -83,8 +83,8 @@ public class Chars {
     }
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - L
     public static void showL(int ht, int wid) {
-
-
+        Draw.printLVer(ht-2);
+        Draw.printHor(wid);
     }
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - O
     public static void showO(int ht, int wid) {
