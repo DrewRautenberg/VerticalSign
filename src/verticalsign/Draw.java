@@ -40,4 +40,14 @@ class Draw {
 
     }
 
+    static void printMVert(int wid, int ht) {
+        int dis = (wid - 2) / 2;
+        for (int i = 0; i < ht; i++) {
+            for (int j = 0; j < dis; j++) {
+                System.out.print(" ");
+            }
+            System.out.println("XX");
+        }
+    }
+
 }
