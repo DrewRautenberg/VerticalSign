@@ -4,9 +4,8 @@ public class Chars {
     //*************************************************************** 10 DIGITS
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 0
     public static void show0(int ht, int wid) {
-        int vertHt = ht-4;
         Draw.printMixedHor(1,wid -2);
-        Draw.printLRVer(ht, wid);
+        Draw.printLRVer(ht-4, wid);
         Draw.printMixedHor(1,wid-2);
     }
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 1
@@ -57,8 +56,9 @@ public class Chars {
     //***************************************************** 11 SQUARISH LETTERS
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - C
     public static void showC(int ht, int wid) {
-
-
+        Draw.printHor(wid);
+        Draw.printLVer(ht-4);
+        Draw.printHor(wid);
     }
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - E
     public static void showE(int ht, int wid) {
@@ -107,8 +107,8 @@ public class Chars {
     }
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - U
     public static void showU(int ht, int wid) {
-
-
+        Draw.printLRVer(ht-2,wid);
+        Draw.printHor(wid);
     }
     //******************************************************************* SPACE
     public static void showSpace(int ht, int wid) {
