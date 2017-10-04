@@ -102,8 +102,8 @@ public class Chars {
     }
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - T
     public static void showT(int ht, int wid) {
-
-
+        Draw.printHor(wid);
+        Draw.printMVert(ht-2, wid);
     }
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - U
     public static void showU(int ht, int wid) {
