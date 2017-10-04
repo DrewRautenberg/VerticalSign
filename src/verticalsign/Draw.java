@@ -10,7 +10,7 @@ class Draw {
         }
     }
 
-    static void printMixedHor(int wid, int numSpaces){
+    static void printMixedHor(int numSpaces, int wid){
         int printWid = wid - numSpaces;
         for (int i=0;i<2;i++){
             for (int j=0;j<numSpaces;j++){
@@ -29,7 +29,7 @@ class Draw {
         }
     }
 
-    static void printRVer(int wid, int ht) {
+    static void printRVer(int ht, int wid) {
         int distRight = wid - 2;
         for (int i = 0; i < ht; i++) {
 
@@ -40,7 +40,7 @@ class Draw {
         }
     }
 
-    static void printLRVer(int wid, int ht) {
+    static void printLRVer(int ht, int wid) {
         int dis = wid - 4;
         for (int i = 0; i < ht; i++) {
             System.out.print("XX");
@@ -52,7 +52,7 @@ class Draw {
 
     }
 
-    static void printMVert(int wid, int ht) {
+    static void printMVert(int ht, int wid) {
         int dis = (wid - 2) / 2;
         for (int i = 0; i < ht; i++) {
             for (int j = 0; j < dis; j++) {

@@ -4,7 +4,10 @@ public class Chars {
     //*************************************************************** 10 DIGITS
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 0
     public static void show0(int ht, int wid) {
-        Draw.printHor(wid);
+        int vertHt = ht-4;
+        Draw.printMixedHor(1,wid -2);
+        Draw.printLRVer(ht, wid);
+        Draw.printMixedHor(1,wid-2);
     }
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 1
     public static void show1(int ht, int wid) {
