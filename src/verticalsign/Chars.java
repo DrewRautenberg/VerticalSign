@@ -11,7 +11,7 @@ public class Chars {
     }
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 1
     public static void show1(int ht, int wid) {
-
+        Draw.printMVert(ht,wid);
 
     }
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 2
@@ -117,8 +117,9 @@ public class Chars {
     }
     //********************************************************** NON-PRINTABLES
     public static void showNonPrintable(int ht, int wid) {
-
-
+        for (int i=0; i<(ht/2); i++){
+            Draw.printHor(wid);
+        }
     }
     //*************************************************************************
 }
