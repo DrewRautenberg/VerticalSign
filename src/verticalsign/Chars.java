@@ -77,8 +77,9 @@ public class Chars {
     }
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - I
     public static void showI(int ht, int wid) {
-
-
+        Draw.printHor(wid);
+        Draw.printMVert(ht-4,wid);
+        Draw.printHor(wid);
     }
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - L
     public static void showL(int ht, int wid) {
