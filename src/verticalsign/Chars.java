@@ -80,8 +80,18 @@ public class Chars {
     }
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 9
     public static void show9(int ht, int wid) {
-
-
+        int topHt;
+        int botHt;
+        topHt =(ht-4) / 2;
+        if (ht % 2 == 0) {
+            botHt = topHt;
+        } else {
+            botHt = topHt+1;
+        }
+        Draw.printMixedHor(1,wid-1);
+        Draw.printLRVer(topHt,wid);
+        Draw.printMixedHor(1,wid);
+        Draw.printRVer(botHt,wid);
     }
     //***************************************************** 11 SQUARISH LETTERS
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - C
