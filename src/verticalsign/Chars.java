@@ -160,8 +160,19 @@ public class Chars {
     }
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - S
     public static void showS(int ht, int wid) {
-
-
+        int topHt;
+        int botHt;
+        topHt =(ht-6) / 2;
+        if (ht % 2 == 0) {
+            botHt = topHt;
+        } else {
+            botHt = topHt+1;
+        }
+        Draw.printHor(wid);
+        Draw.printLVer(topHt);
+        Draw.printHor(wid);
+        Draw.printRVer(botHt,wid);
+        Draw.printHor(wid);
     }
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - T
     public static void showT(int ht, int wid) {
