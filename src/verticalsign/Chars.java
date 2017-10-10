@@ -46,8 +46,17 @@ public class Chars {
     }
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 4
     public static void show4(int ht, int wid) {
-
-
+        int topHt;
+        int botHt;
+        topHt =(ht-2) / 2;
+        if (ht % 2 == 0) {
+            botHt = topHt;
+        } else {
+            botHt = topHt+1;
+        }
+        Draw.printLRVer(topHt,wid);
+        Draw.printHor(wid);
+        Draw.printRVer(botHt,wid);
     }
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 5
     public static void show5(int ht, int wid) {
