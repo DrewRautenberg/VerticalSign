@@ -11,12 +11,22 @@ public class Chars {
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 1
     public static void show1(int ht, int wid) {
         Draw.printMVert(ht,wid);
-
     }
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 2
     public static void show2(int ht, int wid) {
-
-
+        int topHt;
+        int botHt;
+        topHt =(ht-6) / 2;
+        if (ht % 2 == 0) {
+            botHt = topHt;
+        } else {
+            botHt = topHt+1;
+        }
+        Draw.printHor(wid-1);
+        Draw.printRVer(topHt,wid);
+        Draw.printMixedHor(1,wid-2);
+        Draw.printLVer(botHt);
+        Draw.printHor(wid);
     }
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 3
     public static void show3(int ht, int wid) {
