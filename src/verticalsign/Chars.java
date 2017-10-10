@@ -30,8 +30,19 @@ public class Chars {
     }
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 3
     public static void show3(int ht, int wid) {
-
-
+        int topHt;
+        int botHt;
+        topHt =(ht-6) / 2;
+        if (ht % 2 == 0) {
+            botHt = topHt;
+        } else {
+            botHt = topHt+1;
+        }
+        Draw.printHor(wid-1);
+        Draw.printRVer(topHt,wid);
+        Draw.printMixedHor(wid/3,wid-1);
+        Draw.printRVer(botHt,wid);
+        Draw.printHor(wid-1);
     }
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 4
     public static void show4(int ht, int wid) {
