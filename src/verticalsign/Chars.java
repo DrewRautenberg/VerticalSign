@@ -83,6 +83,17 @@ public class Chars {
     }
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - H
     public static void showH(int ht, int wid) {
+        int topHt;
+        int botHt;
+        topHt =(ht-2) / 2;
+        if (ht % 2 == 0) {
+            botHt = topHt;
+        } else {
+            botHt = topHt+1;
+        }
+        Draw.printLRVer(topHt,wid);
+        Draw.printHor(wid);
+        Draw.printLRVer(botHt,wid);
 
 
     }
