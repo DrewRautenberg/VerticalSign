@@ -239,8 +239,12 @@ public class Chars {
     }
     //******************************************************************* SPACE
     public static void showSpace(int ht, int wid) {
-
-
+        for (int i=0;i<ht;i++){
+            for (int j=0;j<wid;j++){
+                System.out.print("");
+            }
+            System.out.println();
+        }
     }
     //********************************************************** NON-PRINTABLES
     public static void showNonPrintable(int ht, int wid) {
