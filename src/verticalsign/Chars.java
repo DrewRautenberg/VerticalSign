@@ -78,8 +78,18 @@ public class Chars {
     }
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - F
     public static void showF(int ht, int wid) {
-
-
+        int topHt;
+        int botHt;
+        topHt =(ht-4) / 2;
+        if (ht % 2 == 0) {
+            botHt = topHt;
+        } else {
+            botHt = topHt+1;
+        }
+        Draw.printHor(wid);
+        Draw.printLVer(topHt);
+        Draw.printHor(wid/2);
+        Draw.printLVer(botHt);
     }
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - H
     public static void showH(int ht, int wid) {
@@ -94,8 +104,6 @@ public class Chars {
         Draw.printLRVer(topHt,wid);
         Draw.printHor(wid);
         Draw.printLRVer(botHt,wid);
-
-
     }
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - I
     public static void showI(int ht, int wid) {
