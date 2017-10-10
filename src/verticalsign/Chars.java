@@ -110,8 +110,9 @@ public class Chars {
     }
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - O
     public static void showO(int ht, int wid) {
-
-
+        Draw.printHor(wid);
+        Draw.printLRVer(ht-4,wid);
+        Draw.printHor(wid);
     }
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - P
     public static void showP(int ht, int wid) {
