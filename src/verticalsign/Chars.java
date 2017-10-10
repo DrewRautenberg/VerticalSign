@@ -66,9 +66,9 @@ public class Chars {
         int botHt;
         topHt =(ht-6) / 2;
         if (ht % 2 == 0) {
-            botHt = topHt + 1;
-        } else {
             botHt = topHt;
+        } else {
+            botHt = topHt+1;
         }
         Draw.printHor(wid);
         Draw.printLVer(topHt);
