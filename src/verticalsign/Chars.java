@@ -64,7 +64,7 @@ public class Chars {
     public static void showE(int ht, int wid) {
         int topHt;
         int botHt;
-        topHt =ht / 2;
+        topHt =(ht-6) / 2;
         if (ht % 2 == 0) {
             botHt = topHt + 1;
         } else {
