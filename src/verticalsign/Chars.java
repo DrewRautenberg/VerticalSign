@@ -61,8 +61,8 @@ public class Chars {
     }
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 7
     public static void show7(int ht, int wid) {
-
-
+        Draw.printHor(wid);
+        Draw.printRVer(ht-2,wid);
     }
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 8
     public static void show8(int ht, int wid) {
