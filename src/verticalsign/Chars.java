@@ -107,8 +107,6 @@ class Chars {
         Draw.printMixedHor(1, wid - 1);
         Draw.printLRVer(botHt, wid);
         Draw.printMixedHor(1, wid - 1);
-
-
     }
 
     static void show9(int ht, int wid) {

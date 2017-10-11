@@ -89,6 +89,7 @@ public class VerticalSign {
                     Chars.showNonPrintable(ht, wid);
                     break;
             }
+            System.out.println();
         }
     }
 }
