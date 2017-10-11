@@ -8,7 +8,7 @@ public class VerticalSign {
         int wid=10;
         String userInput;
         String numIn;
-        JOptionPane.showInputDialog("Please enter phrase to display");
+        userInput=JOptionPane.showInputDialog("Please enter phrase to display");
         numIn=JOptionPane.showInputDialog("Height:");
         ht=Integer.parseInt(numIn);
         numIn=JOptionPane.showInputDialog("Width:");
