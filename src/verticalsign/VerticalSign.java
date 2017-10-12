@@ -6,14 +6,41 @@ public class VerticalSign {
     public static void main(String[] args) {
         int ht;
         int wid;
+        int htIn;
+        int widIn;
         String userInput;
         String numIn;
         String outPut;
-        userInput=JOptionPane.showInputDialog("Please enter phrase to display");
+
         numIn=JOptionPane.showInputDialog("Height:");
-        ht=Integer.parseInt(numIn);
+        htIn=Integer.parseInt(numIn);
+        if ((htIn<=20) && (htIn>=10)){
+            ht=htIn;
+        }
+        else {
+            ht=10;
+            JOptionPane.showMessageDialog(null,"Height not in acceptable range, " +
+                    "set to default value of 10.");
+        }
+        if (ht%2 !=0){
+            ht=ht+1;
+            JOptionPane.showMessageDialog(null,"Height is not an even number, set to "+ht+".");
+        }
         numIn=JOptionPane.showInputDialog("Width:");
-        wid=Integer.parseInt(numIn);
+        widIn=Integer.parseInt(numIn);
+        if ((widIn<=16) && (widIn>=8)){
+            wid=widIn;
+        }
+        else {
+            wid=10;
+            JOptionPane.showMessageDialog(null,"Width not in acceptable range, " +
+                    "set to default value of 10.");
+        }
+        if (wid%2 !=0){
+            wid=wid+1;
+            JOptionPane.showMessageDialog(null,"Width is not an even number, set to "+ht+".");
+        }
+        userInput=JOptionPane.showInputDialog("Please enter phrase to display");
 
         outPut=userInput.toUpperCase();
         for (int i=0;i<outPut.length();i++){
