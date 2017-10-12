@@ -23,8 +23,10 @@ public class VerticalSign {
         }
         if (ht % 2 != 0) {
             ht = ht + 1;
-            JOptionPane.showMessageDialog(null, "Height is not an even number, set to " + ht + ".");
+            JOptionPane.showMessageDialog(null, "Height is not an even number, set to " + ht +
+                    ".");
         }
+
         numIn = JOptionPane.showInputDialog("Width:");
         widIn = Integer.parseInt(numIn);
         if ((widIn <= 16) && (widIn >= 8)) {
@@ -36,7 +38,8 @@ public class VerticalSign {
         }
         if (wid % 2 != 0) {
             wid = wid + 1;
-            JOptionPane.showMessageDialog(null, "Width is not an even number, set to " + ht + ".");
+            JOptionPane.showMessageDialog(null, "Width is not an even number, set to " + ht +
+                    ".");
         }
         userInput = JOptionPane.showInputDialog("Please enter phrase to display");
 
