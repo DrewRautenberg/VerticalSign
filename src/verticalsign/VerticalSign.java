@@ -16,7 +16,8 @@ public class VerticalSign {
         htIn = Integer.parseInt(numIn);
         if ((htIn <= 20) && (htIn >= 10)) {
             ht = htIn;
-        } else {
+        }
+        else {
             ht = 10;
             JOptionPane.showMessageDialog(null, "Height not in acceptable range, " +
                     "set to default value of 10.");
@@ -31,7 +32,8 @@ public class VerticalSign {
         widIn = Integer.parseInt(numIn);
         if ((widIn <= 16) && (widIn >= 8)) {
             wid = widIn;
-        } else {
+        }
+        else {
             wid = 10;
             JOptionPane.showMessageDialog(null, "Width not in acceptable range, " +
                     "set to default value of 10.");
