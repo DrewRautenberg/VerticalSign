@@ -12,40 +12,38 @@ public class VerticalSign {
         String numIn;
         String outPut;
 
-        numIn=JOptionPane.showInputDialog("Height:");
-        htIn=Integer.parseInt(numIn);
-        if ((htIn<=20) && (htIn>=10)){
-            ht=htIn;
-        }
-        else {
-            ht=10;
-            JOptionPane.showMessageDialog(null,"Height not in acceptable range, " +
+        numIn = JOptionPane.showInputDialog("Height:");
+        htIn = Integer.parseInt(numIn);
+        if ((htIn <= 20) && (htIn >= 10)) {
+            ht = htIn;
+        } else {
+            ht = 10;
+            JOptionPane.showMessageDialog(null, "Height not in acceptable range, " +
                     "set to default value of 10.");
         }
-        if (ht%2 !=0){
-            ht=ht+1;
-            JOptionPane.showMessageDialog(null,"Height is not an even number, set to "+ht+".");
+        if (ht % 2 != 0) {
+            ht = ht + 1;
+            JOptionPane.showMessageDialog(null, "Height is not an even number, set to " + ht + ".");
         }
-        numIn=JOptionPane.showInputDialog("Width:");
-        widIn=Integer.parseInt(numIn);
-        if ((widIn<=16) && (widIn>=8)){
-            wid=widIn;
-        }
-        else {
-            wid=10;
-            JOptionPane.showMessageDialog(null,"Width not in acceptable range, " +
+        numIn = JOptionPane.showInputDialog("Width:");
+        widIn = Integer.parseInt(numIn);
+        if ((widIn <= 16) && (widIn >= 8)) {
+            wid = widIn;
+        } else {
+            wid = 10;
+            JOptionPane.showMessageDialog(null, "Width not in acceptable range, " +
                     "set to default value of 10.");
         }
-        if (wid%2 !=0){
-            wid=wid+1;
-            JOptionPane.showMessageDialog(null,"Width is not an even number, set to "+ht+".");
+        if (wid % 2 != 0) {
+            wid = wid + 1;
+            JOptionPane.showMessageDialog(null, "Width is not an even number, set to " + ht + ".");
         }
-        userInput=JOptionPane.showInputDialog("Please enter phrase to display");
+        userInput = JOptionPane.showInputDialog("Please enter phrase to display");
 
-        outPut=userInput.toUpperCase();
-        for (int i=0;i<outPut.length();i++){
-            char car=outPut.charAt(i);
-            switch (car){
+        outPut = userInput.toUpperCase();
+        for (int i = 0; i < outPut.length(); i++) {
+            char car = outPut.charAt(i);
+            switch (car) {
                 case '0':
                     Chars.show0(ht, wid);
                     break;
