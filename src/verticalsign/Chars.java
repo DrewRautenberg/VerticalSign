@@ -12,79 +12,49 @@ class Chars {
     }
 
     static void show2(int ht, int wid) {
-        int topHt;
-        int botHt;
-        topHt = (ht - 6) / 2;
-        if (ht % 2 == 0) {
-            botHt = topHt;
-        } else {
-            botHt = topHt + 1;
-        }
+        int segHt;
+        segHt = (ht - 6) / 2;
         Draw.printHor(wid - 1);
-        Draw.printRVer(topHt, wid);
+        Draw.printRVer(segHt, wid);
         Draw.printMixedHor(1, wid - 2);
-        Draw.printLVer(botHt);
+        Draw.printLVer(segHt);
         Draw.printHor(wid);
     }
 
     static void show3(int ht, int wid) {
-        int topHt;
-        int botHt;
-        topHt = (ht - 6) / 2;
-        if (ht % 2 == 0) {
-            botHt = topHt;
-        } else {
-            botHt = topHt + 1;
-        }
+        int segHt;
+        segHt = (ht - 6) / 2;
         Draw.printHor(wid - 1);
-        Draw.printRVer(topHt, wid);
+        Draw.printRVer(segHt, wid);
         Draw.printMixedHor(wid / 3, wid - 1);
-        Draw.printRVer(botHt, wid);
+        Draw.printRVer(segHt, wid);
         Draw.printHor(wid - 1);
     }
 
     static void show4(int ht, int wid) {
-        int topHt;
-        int botHt;
-        topHt = (ht - 2) / 2;
-        if (ht % 2 == 0) {
-            botHt = topHt;
-        } else {
-            botHt = topHt + 1;
-        }
-        Draw.printLRVer(topHt, wid);
+        int segHt;
+        segHt = (ht - 2) / 2;
+        Draw.printLRVer(segHt, wid);
         Draw.printHor(wid);
-        Draw.printRVer(botHt, wid);
+        Draw.printRVer(segHt, wid);
     }
 
     static void show5(int ht, int wid) {
-        int topHt;
-        int botHt;
-        topHt = (ht - 6) / 2;
-        if (ht % 2 == 0) {
-            botHt = topHt;
-        } else {
-            botHt = topHt + 1;
-        }
+        int segHt;
+        segHt = (ht - 6) / 2;
         Draw.printHor(wid);
-        Draw.printLVer(topHt);
+        Draw.printLVer(segHt);
         Draw.printHor(wid - 1);
-        Draw.printRVer(botHt, wid);
+        Draw.printRVer(segHt, wid);
         Draw.printHor(wid - 1);
     }
 
     static void show6(int ht, int wid) {
-        int topHt;
-        int botHt;
-        topHt = (ht - 6) / 2;
-        if (ht % 2 == 0) {
-            botHt = topHt;
-        } else {
-            botHt = topHt + 1;
-        }
-        Draw.printLVer(topHt + 2);
+        int segHt;
+        segHt = (ht - 6) / 2;
+        Draw.printLVer(segHt + 2);
         Draw.printHor(wid - 1);
-        Draw.printLRVer(botHt, wid);
+        Draw.printLRVer(segHt, wid);
         Draw.printMixedHor(1, wid - 1);
     }
 
@@ -94,34 +64,22 @@ class Chars {
     }
 
     static void show8(int ht, int wid) {
-        int topHt;
-        int botHt;
-        topHt = (ht - 6) / 2;
-        if (ht % 2 == 0) {
-            botHt = topHt;
-        } else {
-            botHt = topHt + 1;
-        }
+        int segHt;
+        segHt = (ht - 6) / 2;
         Draw.printMixedHor(1, wid - 1);
-        Draw.printLRVer(topHt, wid);
+        Draw.printLRVer(segHt, wid);
         Draw.printMixedHor(1, wid - 1);
-        Draw.printLRVer(botHt, wid);
+        Draw.printLRVer(segHt, wid);
         Draw.printMixedHor(1, wid - 1);
     }
 
     static void show9(int ht, int wid) {
-        int topHt;
-        int botHt;
-        topHt = (ht - 4) / 2;
-        if (ht % 2 == 0) {
-            botHt = topHt;
-        } else {
-            botHt = topHt + 1;
-        }
+        int segHt;
+        segHt = (ht - 4) / 2;
         Draw.printMixedHor(1, wid - 1);
-        Draw.printLRVer(topHt, wid);
+        Draw.printLRVer(segHt, wid);
         Draw.printMixedHor(1, wid);
-        Draw.printRVer(botHt, wid);
+        Draw.printRVer(segHt, wid);
     }
 
     static void showC(int ht, int wid) {
@@ -131,48 +89,30 @@ class Chars {
     }
 
     static void showE(int ht, int wid) {
-        int topHt;
-        int botHt;
-        topHt = (ht - 6) / 2;
-        if (ht % 2 == 0) {
-            botHt = topHt;
-        } else {
-            botHt = topHt + 1;
-        }
+        int segHt;
+        segHt = (ht - 6) / 2;
         Draw.printHor(wid);
-        Draw.printLVer(topHt);
+        Draw.printLVer(segHt);
         Draw.printHor(wid / 2);
-        Draw.printLVer(botHt);
+        Draw.printLVer(segHt);
         Draw.printHor(wid);
     }
 
     static void showF(int ht, int wid) {
-        int topHt;
-        int botHt;
-        topHt = (ht - 4) / 2;
-        if (ht % 2 == 0) {
-            botHt = topHt;
-        } else {
-            botHt = topHt + 1;
-        }
+        int segHt;
+        segHt = (ht - 4) / 2;
         Draw.printHor(wid);
-        Draw.printLVer(topHt);
+        Draw.printLVer(segHt);
         Draw.printHor(wid / 2);
-        Draw.printLVer(botHt);
+        Draw.printLVer(segHt);
     }
 
     static void showH(int ht, int wid) {
-        int topHt;
-        int botHt;
-        topHt = (ht - 2) / 2;
-        if (ht % 2 == 0) {
-            botHt = topHt;
-        } else {
-            botHt = topHt + 1;
-        }
-        Draw.printLRVer(topHt, wid);
+        int segHt;
+        segHt = (ht - 2) / 2;
+        Draw.printLRVer(segHt, wid);
         Draw.printHor(wid);
-        Draw.printLRVer(botHt, wid);
+        Draw.printLRVer(segHt, wid);
     }
 
     static void showI(int ht, int wid) {
@@ -193,33 +133,21 @@ class Chars {
     }
 
     static void showP(int ht, int wid) {
-        int topHt;
-        int botHt;
-        topHt = (ht - 4) / 2;
-        if (ht % 2 == 0) {
-            botHt = topHt;
-        } else {
-            botHt = topHt + 1;
-        }
+        int segHt;
+        segHt = (ht - 4) / 2;
         Draw.printHor(wid);
-        Draw.printLRVer(topHt, wid);
+        Draw.printLRVer(segHt, wid);
         Draw.printHor(wid);
-        Draw.printLVer(botHt);
+        Draw.printLVer(segHt);
     }
 
     static void showS(int ht, int wid) {
-        int topHt;
-        int botHt;
-        topHt = (ht - 6) / 2;
-        if (ht % 2 == 0) {
-            botHt = topHt;
-        } else {
-            botHt = topHt + 1;
-        }
+        int segHt;
+        segHt = (ht - 6) / 2;
         Draw.printHor(wid);
-        Draw.printLVer(topHt);
+        Draw.printLVer(segHt);
         Draw.printHor(wid);
-        Draw.printRVer(botHt, wid);
+        Draw.printRVer(segHt, wid);
         Draw.printHor(wid);
     }
 
