@@ -1,3 +1,6 @@
+// Author: Drew Rautenberg
+// Class section: CS1110-560, Wednesday 2:30 to 4:20
+// Program: Assignment 3, Vertical Sign app
 package verticalsign;
 
 import javax.swing.*;
